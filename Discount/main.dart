@@ -24,4 +24,5 @@ void main(){
 
   m4.printDetails();
   print("the discounted price: " + m4.getActualPrice().toString());
-};
+}
+
