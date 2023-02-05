@@ -20,7 +20,7 @@ double  getActualPrice(){
 }
 
 void printDetails(){
-  print("Device Details\t:");
+  print("Device Details\t\t:");
   print('Brand\t\t\t: $brand, \nModel\t\t\t: $model,\nMRP\t\t\t: $mrp,\nDiscount\t\t: $discount,\nDiscounted Price\t: ' + mobileDetails["Discounted"].toString()) ;
   //print(mobileDetails);
 }

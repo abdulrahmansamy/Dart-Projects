@@ -29,8 +29,8 @@ void main(){
   mobiles.add(mobile(20000, 10,"IPhone", "11 Pro"));
   mobiles.add(mobile(7000, 10,"One Plus", "7"));
   
-  for (var x in mobiles){
-    x.printDetails();
+  for (var m in mobiles){
+    m.printDetails();
     print("\n");
   }
 }
