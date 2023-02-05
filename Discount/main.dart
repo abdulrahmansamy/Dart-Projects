@@ -1,7 +1,7 @@
 import 'mobile.dart';
 
 void main(){
-  print('Hello World');
+  //print('Hello World');
   var m1 = mobile(1000, 10,"Nokia", "3310");
 
   m1.printDetails();
@@ -24,5 +24,20 @@ void main(){
 
   m4.printDetails();
   print("the discounted price: " + m4.getActualPrice().toString());
+
+
+// using lists
+  var mobiles = [];
+
+  mobiles.add(mobile(1000, 10,"Nokia", "3310"));
+  mobiles.add(mobile(10000, 10,"Samsung Galaxy", "S 20"));
+  mobiles.add(mobile(20000, 10,"IPhone", "11 Pro"));
+  mobiles.add(mobile(7000, 10,"One Plus", "7"));
+  
+  for (var x in mobiles){
+    x.printDetails();
+    //print("the discounted price: " + x.getActualPrice().toString());
+    print("\n");
+  }
 }
 

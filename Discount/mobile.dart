@@ -12,6 +12,7 @@ mobile(int mrp1, int discount1,var brand1, var model1){
   mobileDetails["Discount"] = discount = discount1;
   mobileDetails["Brand"] = brand = brand1;
   mobileDetails["Model"] = model = model1;
+  mobileDetails["Discounted"] = getActualPrice();
 }
 
 double  getActualPrice(){
@@ -19,9 +20,9 @@ double  getActualPrice(){
 }
 
 void printDetails(){
-  print("Device Details:");
-  print('Brand: $brand, Model: $model, MRP: $mrp, Discount: $discount') ;
-  print(mobileDetails);
+  print("Device Details\t:");
+  print('Brand\t\t\t: $brand, \nModel\t\t\t: $model,\nMRP\t\t\t: $mrp,\nDiscount\t\t: $discount,\nDiscounted Price\t: ' + mobileDetails["Discounted"].toString()) ;
+  //print(mobileDetails);
 }
 
 }
